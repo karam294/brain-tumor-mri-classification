@@ -37,7 +37,7 @@ brain-tumor-mri-classification/
 
 ## Roadmap
 
-- [ ] Phase 0: Repository and environment setup
+- [done ] Phase 0: Repository and environment setup
 - [ ] Phase 1: Dataset selection and description
 - [ ] Phase 2: Data exploration and preprocessing
 - [ ] Phase 3: Step-by-step model building
@@ -64,4 +64,4 @@ _To be completed._
 
 ## Author
 
-karam jammal  · MLAI 504, 2026–2027
+karam jammal and Yorgo bou fayad   · MLAI 504, 2026–2027
