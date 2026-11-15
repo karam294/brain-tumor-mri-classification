@@ -218,3 +218,26 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ----- Project-specific -----
+# Raw dataset (downloaded from Kaggle)
+data/raw/
+*.zip
+
+# Model weights and checkpoints (too large for git)
+*.keras
+*.h5
+checkpoints/
+models/*
+!models/README.md
+
+# Keras Tuner search folders
+tuning/
+
+# Kaggle API key: never commit it
+kaggle.json
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
