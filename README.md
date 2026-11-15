@@ -37,8 +37,8 @@ brain-tumor-mri-classification/
 
 ## Roadmap
 
-- [done ] Phase 0: Repository and environment setup
-- [ ] Phase 1: Dataset selection and description
+- [X] Phase 0: Repository and environment setup
+- [X ] Phase 1: Dataset selection and description
 - [ ] Phase 2: Data exploration and preprocessing
 - [ ] Phase 3: Step-by-step model building
 - [ ] Phase 4: Hyperparameter tuning
