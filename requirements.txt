@@ -1,14 +1,24 @@
-# Python 3.12
-tensorflow==2.21.0
-keras==3.15.1
-keras-tuner==1.4.8
-kagglehub==1.0.3
-numpy==2.5.4
-pandas==3.1.1
-scikit-learn==1.9.1
-opencv-python>=5.0
-imagehash==4.3.2
+# Python 3.12 (exact versions will be pinned at the end of the project)
+
+# Deep learning
+torch
+torchvision
+
+# Data handling and machine learning utilities
+numpy
+pandas
+scikit-learn
+
+# Images and duplicate detection
+opencv-python
+pillow
+imagehash
+kagglehub
+
+# Visualization
 matplotlib
 seaborn
+
+# Jupyter in VS Code
 ipykernel
 ipywidgets

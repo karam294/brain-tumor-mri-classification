@@ -1,3 +1,3 @@
 # Notebooks
 
-The main project notebook (the graded deliverable), saved here from Kaggle.
+`main.ipynb` is the main project notebook (the graded deliverable).
