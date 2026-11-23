@@ -6,4 +6,4 @@ The raw MRI images are not stored in this repository (about 150 MB). The noteboo
 - **Link:** https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset
 - **License:** CC0: Public Domain
 
-`split_manifest.csv` lists every image kept after duplicate removal, with its class and its split (train / validation / test), so the exact split can be reproduced.
+`split_manifest.csv` lists every image kept after duplicate removal, with its class, its near-duplicate group (images whose perceptual hashes differ by 4 bits or less share a group, and a group never spans two sets) and its split (train / validation / test), so the exact split can be reproduced.

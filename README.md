@@ -8,7 +8,7 @@ This project classifies brain MRI slices into four classes (**glioma, meningioma
 
 ## Highlights
 
-- **Leakage audit:** duplicate images found with perceptual hashing (23% of the original test images had a copy in the training set), followed by a duplicate-free re-split of the data
+- **Leakage audit:** duplicate images found with perceptual hashing (23% of the original test images had a copy in the training set), and near-duplicates (neighbouring slices of the same patient) grouped so they never cross the train / validation / test split
 - **Step-by-step CNN development:** from a fully connected baseline to a deeper CNN with batch normalization, data augmentation and dropout
 - **Hyperparameter tuning:** random search over learning rate, batch size, dropout and model size
 - **Transfer learning:** ResNet50 pretrained on ImageNet, first as a frozen feature extractor, then fine-tuned
@@ -58,7 +58,13 @@ _To be completed at the end of the project._
 
 ## References
 
-_To be completed._
+The full list is in Section 9 of the notebook.
+
+- Nickparvar, M. (2021). *Brain Tumor MRI Dataset* (version 2). Kaggle. Combines the Figshare (Cheng et al., 2015), SARTAJ (Bhuvaji et al., 2020) and Br35H (Hamada, 2020) datasets.
+- He, K., Zhang, X., Ren, S., & Sun, J. (2016). Deep residual learning for image recognition. *CVPR*.
+- Bergstra, J., & Bengio, Y. (2012). Random search for hyper-parameter optimization. *JMLR*, 13.
+- Paszke, A., et al. (2019). PyTorch: An imperative style, high-performance deep learning library. *NeurIPS*, 32.
+- Buchner, J. *ImageHash*. https://github.com/JohannesBuchner/imagehash
 
 ## Authors
 
