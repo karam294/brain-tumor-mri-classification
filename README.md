@@ -10,7 +10,7 @@ This project classifies brain MRI slices into four classes (**glioma, meningioma
 
 - **Leakage audit:** duplicate images found with perceptual hashing (23% of the original test images had a copy in the training set), and near-duplicates (neighbouring slices of the same patient) grouped so they never cross the train / validation / test split
 - **Step-by-step CNN development:** from a fully connected baseline to a deeper CNN with batch normalization, data augmentation and dropout
-- **Hyperparameter tuning:** random search over learning rate, batch size, dropout and model size
+- **Hyperparameter tuning:** random search over learning rate, dropout, model size and weight decay, then batch-size and optimizer comparisons
 - **Transfer learning:** ResNet50 pretrained on ImageNet, first as a frozen feature extractor, then fine-tuned
 - **Evaluation:** per-class precision, recall and F1, confusion matrix and misclassified examples
 
@@ -29,8 +29,7 @@ brain-tumor-mri-classification/
 ├── README.md            # project overview (this file)
 ├── requirements.txt     # Python dependencies
 ├── notebooks/           # the main Jupyter notebook (graded deliverable)
-├── data/                # dataset information and the train / validation / test split
-└── results/             # experiment results
+└── data/                # dataset information and the train / validation / test split
 ```
 
 ## Roadmap

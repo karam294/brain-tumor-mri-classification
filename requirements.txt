@@ -1,24 +1,24 @@
-# Python 3.12 (exact versions will be pinned at the end of the project)
+# Python 3.13 (versions used for the final run)
 
 # Deep learning
-torch
-torchvision
+torch==2.15.0
+torchvision==0.29.2
 
 # Data handling and machine learning utilities
-numpy
-pandas
-scikit-learn
+numpy==2.5.5
+pandas==3.1.1
+scikit-learn==1.9.1
 
 # Images and duplicate detection
-opencv-python
+opencv-python>=5.1
 pillow
-imagehash
-kagglehub
+imagehash==4.3.2
+kagglehub==1.0.3
 
 # Visualization
 matplotlib
 seaborn
 
-# Jupyter in VS Code
+# Jupyter
 ipykernel
 ipywidgets
