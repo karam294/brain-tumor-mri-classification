@@ -20,7 +20,7 @@ This project classifies brain MRI slices into four classes (**glioma, meningioma
 
 ## Tech stack
 
-Python · PyTorch · torchvision · scikit-learn · OpenCV · ImageHash · VS Code with a Google Colab GPU
+Python · PyTorch · torchvision · scikit-learn · OpenCV · ImageHash · VS Code (GPU: NVIDIA CUDA or Apple-silicon MPS)
 
 ## Repository structure
 
@@ -38,23 +38,30 @@ brain-tumor-mri-classification/
 - [x] Phase 0: Repository and environment setup
 - [x] Phase 1: Dataset selection and description
 - [x] Phase 2: Data exploration and preprocessing
-- [ ] Phase 3: Step-by-step model building
-- [ ] Phase 4: Hyperparameter tuning
-- [ ] Phase 5: Transfer learning
-- [ ] Phase 6: Integration of course topics
-- [ ] Phase 7: Final evaluation and interpretation
+- [x] Phase 3: Step-by-step model building
+- [x] Phase 4: Hyperparameter tuning
+- [x] Phase 5: Transfer learning
+- [x] Phase 6: Integration of course topics
+- [x] Phase 7: Final evaluation and interpretation
 - [ ] Phase 8: Final notebook and submission
 
 ## How to run
 
 1. Create a virtual environment and install the dependencies: `pip install -r requirements.txt`
 2. Open `notebooks/main.ipynb` in VS Code or Jupyter. The dataset downloads automatically with `kagglehub`.
-3. For training, connect the notebook to a GPU, for example with the Google Colab extension for VS Code (**Select Kernel → Colab → New Colab Server → GPU**).
-4. Run all cells.
+3. Run all cells. The notebook uses a GPU automatically when one is available (NVIDIA CUDA or the GPU of an Apple-silicon Mac). On a MacBook with an M4 chip, the whole notebook takes about 3 hours.
 
 ## Results
 
-_To be completed at the end of the project._
+Accuracy on the validation set (933 images, used for all choices) and on the test set (933 images, used once at the end). Similar images of the same patient are kept in the same set, so the test images are really new to the models.
+
+| Model | Validation accuracy | Test accuracy |
+|---|---|---|
+| MLP baseline | 73.6% | 72.7% |
+| Tuned CNN (trained from scratch) | 89.6% | 91.3% |
+| **ResNet50, fine-tuned** | **95.3%** | **96.5%** |
+
+The fine-tuned ResNet50 misclassifies 33 of the 933 test images. Most of its errors are between glioma and meningioma, and only 6 of the 779 tumor images are predicted as "no tumor". Details are in Sections 7 and 8 of the notebook.
 
 ## References
 
